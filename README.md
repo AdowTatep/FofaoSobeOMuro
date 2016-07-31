@@ -1,5 +1,7 @@
 # FofaoSobeOMuro
-My first game. Made with unity
+My first game. Made with unity near beginning of 2015
+
+## Play it here: https://adowtatep.github.io/FofaoSobeOMuro/
 
 > Unfortunately chrome doesn't support unity plugin anymore, so it just works with firefox 
 
