@@ -1,0 +1,166 @@
+body {
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	color: white;	
+	background-color: #732219;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+a:link, a:visited {
+		color: #000;
+}
+a:active, a:hover {
+	color: #666;
+}
+p.header {
+	font-size: small;
+}
+p.header span {
+	font-weight: bold;
+}
+p.footer {
+	font-size: x-small;
+}
+div.content {
+	margin: auto;
+	width: 854px;
+}
+div.broken,
+div.missing {
+	margin: auto;
+	position: relative;
+	top: 50%;
+	width: 193px;
+}
+div.broken a,
+div.missing a {
+	height: 63px;
+	position: relative;
+	top: -31px;
+}
+div.broken img,
+div.missing img {
+	border-width: 0px;
+}
+div.broken {
+	display: none;
+}
+div#unityPlayer {
+	cursor: default;
+	height: 480px;
+	width: 854px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.tudo {
+	margin: auto;
+}
+
+.topo img {
+
+	width: 300px;
+	margin-bottom: 20px;
+
+}
+
+
+hr {
+	height: 8px;
+	background: url("images/hr.png") repeat center;
+	border: none;
+	border-left: 2px;
+}
+
+.left-column {
+	display: inline-block;
+	margin: 0px 0px 0px 0px;
+	border: 0px 0px 0px 0px;
+	height: 100%;
+	vertical-align: top;
+}
+
+.middle-column {
+	display: inline-block;
+	margin: 0px 0px 0px 0px;
+	border: 0px 0px 0px 0px;
+	height: 100%;
+	vertical-align: top;
+
+}
+
+.right-column {
+	display: inline-block;
+	margin: 0px 0px 0px 0px;
+	border: 0px 0px 0px 0px;
+	height: 100%;
+	vertical-align: top;
+
+}
+
+.gamewindow {
+	width: 840;
+	height: 480;
+	margin: 0px 0px 0px 0px;
+	border: 0px 0px 0px 0px;
+}
+
+.leftgamewindow {
+	height: 480px;
+}
+
+.rightgamewindow {
+	height: 480px;
+}
+
+.descr {
+	text-align: justify;
+	width: 500px;
+	font-family: Tahoma, Arial, sans-serif;
+	margin: 0px 0px 40px 0px;
+	border: 0px 0px 0px 0px;
+}
+
+.leftbot {
+	text-align: left;
+	margin-right: 200px;
+}
+
+.ads {
+	width: 300px;
+	height: 300px;
+	font-family: Tahoma, Arial, sans-serif;
+	margin: 0px 0px 0px 0px;
+	border: 0px 0px 0px 0px;
+	background-color: #1db0b0;
+	text-align: center;
+}
+
+.rightbot {
+	border-left: 100px;
+	text-align: left;
+}
+
+	
+.changelog ul {
+	text-align: left;
+	display: inline-block;
+}
+
+.about ul {
+	margin: -40px 0px 0px 0px;
+	border: 0px 0px 0px 0px;
+	
+}

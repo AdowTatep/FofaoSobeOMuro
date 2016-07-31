@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Fofão Sobe o Muro</title>
+
+		<meta name='author' content='Matheus Assis Rios & Luan Marques'>
+		<meta name='reply-to' content='adowtatep@hotmail.com.br'>
+		<meta name='description' content='Faça o fofão subir no muro e não ser atingido pelos obstáculos! O quão longe você consegue chegar?'>
+		<meta name='keywords' content='fofao, fofão, game, subindo, o, muro'>
+		<meta http-equiv='content-language' content='pt-br'>
+
+
+
+		<meta property="og:title" content='Fofão sobe o Muro'/>
+		<meta property="og:image" content="http://adowtatep.com/fofao/images/logo.png"/>
+		<meta property="og:site_name" content="Fofão sobe o Muro"/>
+		<meta property="og:description" content='Faça o fofão subir no muro e não ser atingido pelos obstáculos! O quão longe você consegue chegar?'/>
+
+
+
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+
+		<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
+		<script type="text/javascript">
+		<!--
+		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+		if (document.location.protocol == 'https:')
+			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+		-->
+		</script>
+		<script type="text/javascript">
+		<!--
+			var config = {
+				width: 854,
+				height: 480,
+				params: { enableDebugging:"0" }
+
+			};
+			var u = new UnityObject2(config);
+
+			jQuery(function() {
+
+				var $missingScreen = jQuery("#unityPlayer").find(".missing");
+				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
+				$missingScreen.hide();
+				$brokenScreen.hide();
+
+				u.observeProgress(function (progress) {
+					switch(progress.pluginStatus) {
+						case "broken":
+							$brokenScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$brokenScreen.show();
+						break;
+						case "missing":
+							$missingScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$missingScreen.show();
+						break;
+						case "installed":
+							$missingScreen.remove();
+						break;
+						case "first":
+						break;
+					}
+				});
+				u.initPlugin(jQuery("#unityPlayer")[0], "fofao.unity3d");
+			});
+		-->
+		</script>
+
+		<link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+
+	</head>
+
+
+
+
+
+
+
+
+
+	<body>
+	<center>
+		<div class='tudo'>
+			<hr width="600px" align="center">
+
+			<div class='topo'>
+				<img src='images/logo.png'>
+			</div>
+
+			<div class='left-column'>
+
+
+				<div class='leftgamewindow'>
+					<img src='images/leftbarbg.png'>
+				</div>
+
+
+			</div>
+
+			<div class='middle-column'>
+
+
+
+				<div class='gamewindow'>
+					<div id="unityPlayer">
+
+						<div class="missing">
+							<a href="http://unity3d.com/webplayer/" title="É necessário ter o Unity Web Player. Clique aqui!">
+								<img alt="É necessário ter o Unity Web Player. Clique aqui!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+							</a>
+						</div>
+
+
+						<div class="broken">
+							<a href="http://unity3d.com/webplayer/" title="É necessário ter o Unity Web Player. Clique aqui! Reinicie seu navegador após a instalação.">
+								<img alt="É necessário ter o Unity Web Player. Clique aqui! Reinicie seu navegador após a instalação." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
+							</a>
+						</div>
+
+
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class='right-column'>
+
+				<div class='rightgamewindow'>
+					<img src='images/rightbarbg.png'>
+				</div>
+
+			</div>
+
+			<hr width="1200px" align="center">
+
+			<div class='left-column leftbot'>
+				<div class='descr'>
+					<h2><strong>Infelizmente o chrome não suporta mais unity em plugin. Então o jogo só funciona com firefox</strong></h2>
+					<strong>Talvez um dia eu retome o desenvolvimento e faça uma versão em WebGL :)</strong>
+					<br>
+					Suba no muro! Faça o Fofão subir no muro para escapar dos obstáculos e não deixe ele cair! Você precisa controlar Fofão e impedir ele de tropeçar nos obstáculos. O quão longe você consegue chegar? :D
+					<br>
+
+					<h3>Como jogar:</h3>
+
+					<ol>
+						<li>Setas para cima e para baixo no teclado</li>
+						<li>Se a barra estiver carregada e mandarem você subir no muro, suba no muro!(Aperte para cima com fofão encostando no muro)</li>
+						<li>Aperte espaço em cima do muro para carregar sua barrinha de fofonice!</li>
+						<li>Se a barra de fofonice chegar a 0 você cai do muro</li>
+						<li>Se você ficar tempo o suficiente no muro segurando a barra de fofonice no máximo, você volta a velocidade inicial, mas mantendo sua distância!</li>
+					</ol>
+
+					<br>
+					<h4>O jogo e o site ainda estão em desenvolvimento!</h4>
+					<br>
+					Infelizmente perdi os arquivos de desenvolvimento do jogo. Impedindo de continuar. Recuperei a maioria, mas as animações, um áudio, e a "ligação" entre os scripts e os assets foi perdida, ainda não continuei o trabalho para recuperar :/
+					<br>
+				</div>
+
+				<div class='changelog'>
+
+					<h3>Changelog</h3>
+
+					<ul>
+
+						<li>
+							Versão: 0.1
+							<ol>
+								<li>Lançamento da versão 0.1</li>
+							</ol>
+						</li>
+
+					</ul>
+
+				</div>
+
+				<div class='changelog'>
+
+					<h3>O que está por vir</h3>
+
+					<ol>
+						<li>Tutorial para subir o muro</li>
+						<li>Mais Obstáculos</li>
+						<li>Música de fundo</li>
+						<li>Apk para android</li>
+						<li>Sistema de Recordes salvos no site mostrando os melhores jogadores em um ranking</li>
+						<li>Mais casas</li>
+
+					</ol>
+
+				</div>
+
+				<div class='about'>
+
+					<h3>Sobre</h3>
+
+					<p class='descr'>Fofão sobe o muro é um jogo que fiz para aprender a usar a Unity e a programar,
+					para me dar um desafio e mostrar a mim mesmo que consigo fazer o que quiser, sem necessáriamente
+					saber como fazer. Com a ajuda de um amigo, quem fez a maioria dos sprites(e quem também teve a ideia do jogo)
+					, e da internet com pessoas que também nos ajudaram,conseguimos por em prática esse plano, que acabou ficando bem divertido.
+					<br>
+					<br>
+					<br>
+					Criadores:
+					<ul>
+						<li>Matheus Assis Rios</li>
+						<li>Luan Marques</li>
+					</ul>
+					</p>
+
+				</div>
+			</div>
+
+
+			<div class='right-column rightbot'>
+
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- Fofao -->
+				<ins class="adsbygoogle"
+					 style="display:block"
+					 data-ad-client="ca-pub-9825100654887403"
+					 data-ad-slot="1800957574"
+					 data-ad-format="auto"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+
+			</div>
+
+		</div>
+		</center>
+	</body>
+</html>
