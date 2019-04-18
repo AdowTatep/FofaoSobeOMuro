@@ -1,9 +1,9 @@
 # FofaoSobeOMuro
 My first game. Made with unity near beginning of 2015
 
-## Play it here: https://adowtatep.github.io/FofaoSobeOMuro/
+## Play it here: https://assisrmatheus.github.io/FofaoSobeOMuro/
 
-> Unfortunately chrome doesn't support unity plugin anymore, so it just works with firefox 
+**Unfortunately chrome doesn't support unity plugin anymore, so it just works with firefox **
 
 Maybe one day I'll get back to the project and finish it so maybe a WebGL version to run on chrome :)
 
